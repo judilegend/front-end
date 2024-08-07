@@ -4,6 +4,10 @@ import AuthFormTemplate from "../components/AuthFormTemplate.vue";
 
 <template>
   <main class="w-full h-screen m-auto flex">
-    <FormTemplate title="Login Page" btn_submit="Login" redirect="register" />
+    <AuthFormTemplate
+      title="Login Page"
+      btn_submit="Login"
+      redirect="register"
+    />
   </main>
 </template>

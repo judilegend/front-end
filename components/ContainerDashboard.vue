@@ -9,7 +9,7 @@
       <Navbar />
     </div>
     <div class="col-start-2 row-start-2 px-8">
-      <section class="flex w-full justify-end relative">
+      <section class="flex w-full justify-between">
         <slot></slot>
       </section>
     </div>
