@@ -8,10 +8,9 @@
     <div class="col-span-1">
       <Navbar />
     </div>
-    <div class="col-start-2 row-start-2 px-8 bg-blue-500">
-      <section class="flex w-full justify-between relative">
+    <div class="col-start-2 row-start-2 px-8">
+      <section class="flex w-full justify-end relative">
         <slot></slot>
-        <!-- <AddTaskTemplate /> -->
       </section>
     </div>
   </main>

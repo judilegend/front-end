@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import FormTemplate from "../components/FormTemplate.vue";
+import AuthFormTemplate from "../components/AuthFormTemplate.vue";
 </script>
 
 <template>
   <main class="w-full h-screen m-auto flex">
-    <FormTemplate
+    <AuthFormTemplate
       title="Register Page"
       redirect="login"
       btn_submit="Register"

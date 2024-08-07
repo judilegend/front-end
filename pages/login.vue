@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FormTemplate from "../components/FormTemplate.vue";
+import AuthFormTemplate from "../components/AuthFormTemplate.vue";
 </script>
 
 <template>
