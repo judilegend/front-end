@@ -1,6 +1,6 @@
 <template>
   <article
-    class="w-64 h-64 bg-white-700 shadow-lg p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300"
+    class="w-[280px] h-64 bg-white-700 shadow-lg p-4 space-y-2 rounded-md hover:-translate-y-2 duration-300"
   >
     <svg
       class="icon"
