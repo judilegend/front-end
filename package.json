@@ -10,7 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt-alt/auth": "^3.1.7",
+    "@nuxt-alt/http": "^1.7.10",
+    "@pinia/nuxt": "^0.5.3",
     "nuxt": "^3.12.4",
+    "pinia": "^2.2.1",
     "vue": "latest"
   },
   "devDependencies": {
