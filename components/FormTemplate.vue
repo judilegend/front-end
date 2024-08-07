@@ -1,11 +1,29 @@
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    btn_submit: {
+      type: String,
+      required: true,
+    },
+    redirect: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>
 <template>
-  <main class="max-w-[500px] m-auto shadow-lg rounded-lg">
+  <section class="max-w-[500px] m-auto shadow-lg rounded-lg">
     <div class="w-full max-w-full px-3 mx-auto mt-0 md:flex-0 shrink-0">
       <div
         class="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border"
       >
         <div class="p-6 mb-0 text-center bg-white border-b-0 rounded-t-2xl">
-          <h5>Register with</h5>
+          <h5>{{ title }}</h5>
         </div>
         <div class="flex flex-wrap px-3 -mx-3 sm:px-6 xl:px-12">
           <div class="w-3/12 max-w-full px-1 ml-auto flex-0">
@@ -213,18 +231,19 @@
                 class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-to-tl from-gray-900 to-slate-800 hover:border-slate-700 hover:bg-slate-700 hover:text-white"
                 type="button"
               >
-                Sign up
+                {{ btn_submit }}
               </button>
             </div>
             <p class="mt-4 mb-0 leading-normal text-sm">
-              Already have an account?
-              <a class="font-bold text-slate-700" href="../pages/sign-in.html"
-                >Sign in</a
-              >
+              Don't have an account yet?
+              <!-- <a class="font-bold text-slate-700" href="../pages/sign-in.html"> -->
+              <NuxtLink class="font-bold text-slate-700" :to="redirect"
+                >{{ redirect }}
+              </NuxtLink>
             </p>
           </form>
         </div>
       </div>
     </div>
-  </main>
+  </section>
 </template>
