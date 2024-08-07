@@ -19,7 +19,7 @@
         >
           <img src="/icons.png" alt="" />
           <span class="text-[15px] ml-4 text-gray-200 font-bold">
-            <a href="dashboard"> Tableau de board</a>
+            <NuxtLink to="admin">Admin</NuxtLink>
           </span>
         </div>
         <div
@@ -27,7 +27,7 @@
         >
           <img src="/icon/operation.svg" alt="" />
           <span class="text-[15px] ml-4 text-gray-200 font-bold">
-            <a href="operation">Taches</a>
+            <NuxtLink to="task">Taches</NuxtLink>
           </span>
         </div>
       </ul>
